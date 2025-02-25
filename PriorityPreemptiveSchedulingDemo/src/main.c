@@ -29,12 +29,13 @@ void obstacle_detection(void *arg1, void *arg2, void *arg3) {
     for (int i = 1; i <= NUM_ITERATIONS; i++) {
 
         print_message_with_time("[Obstacle Detection]: Starting Object Detection Task 🚨");
-		k_busy_wait(OBSTACLE_TASK_DURATION * 1000);
-		print_message_with_time("Finished Obstacle Detection Task 🚨");
 
         //if (i == 1) {
         //    k_thread_priority_set(&obstacle_thread, 4);
         //}
+
+		k_busy_wait(OBSTACLE_TASK_DURATION * 1000);
+		print_message_with_time("Finished Obstacle Detection Task 🚨");
     }
 }
 
